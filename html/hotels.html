@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nouislider.css">
-
     <title>Sedona hotels</title>
 </head>
 <body class="body-hotels">
@@ -39,30 +38,24 @@
             <img src="./img/logo.png" alt="Sedona logo" width="140" height="71">
         </div>        
     </header>   
-
         <main>
             <form class="filter" action="https://echo.htmlacademy.ru/courses" method="POST">
-
                 <div class="filter-block">
-
                     <p class="filter-block_title">
                             Инфраструктура:
                     </p>
-
                     <div class="filter-block_item">                            
                         <input type="checkbox"  name="filter_pool" id="filter_pool" checked>
                         <div class="filter-block_item_isUnChecked"></div>
                         <div class="filter-block_item_isChecked"></div>
                         <label class="filter-block_item" for="filter_pool">Бассейн</label>
                     </div>                            
-
                     <div class="filter-block_item">
                         <input type="checkbox"  name="filter_parking" id="filter_parking">
                         <div class="filter-block_item_isUnChecked"></div>
                         <div class="filter-block_item_isChecked"></div>
                         <label class="filter-block_item" for="filter_parking">Парковка</label>                        
                     </div>                        
-
                     <div class="filter-block_item">
                         <input type="checkbox"  name="filter_wifi" id="filter_wifi">
                         <div class="filter-block_item_isUnChecked"></div>
@@ -71,27 +64,22 @@
                     </div>                        
 
                 </div><!-- <div class="filter-block"> -->
-
                 <div class="filter-block">
-
                     <p class="filter-block_title">
                             Тип жилья:
                     </p>
-
                     <div class="filter-block_item">
                         <input type="checkbox"  name="filter_gost" id="filter_gost" checked>
                         <div class="filter-block_item_isUnChecked"></div>
                         <div class="filter-block_item_isChecked"></div>
                         <label class="filter-block_item" for="filter_gost">Гостиница</label>
                     </div>                            
-
                     <div class="filter-block_item">
                         <input type="checkbox"  name="filter_motel" id="filter_motel" checked>
                         <div class="filter-block_item_isUnChecked"></div>
                         <div class="filter-block_item_isChecked"></div>
                         <label class="filter-block_item" for="filter_motel">Мотель</label>                        
                     </div>                        
-
                     <div class="filter-block_item">
                         <input type="checkbox"  name="filter_apt" id="filter_apt" checked>
                         <div class="filter-block_item_isUnChecked"></div>
@@ -100,92 +88,70 @@
                     </div>                        
 
                 </div><!-- <div class="filter-block"> -->      
-                        
                 <div class="filter-block filter-show">
                     <p class="filter-block_title">Стоимость в сутки (Р):</p>
                     <div class="filter-block_priceRange">
                         <p class="filter-block_priceRange_from">
                             От 0
-                        </p>
-                        
+                        </p>                       
                         <!-- not visible, just to send -->
                         <input class="hidden" name="filter_priceFrom" id="priceFromInput">
                         <input class="hidden" name="filter_priceTo" id="priceToInput">
-
                         <div class="filter-block_priceRange_center">                                
                         </div>
-
                         <p class="filter-block_priceRange_to">
                                 До 0
                         </p>                            
-
                     </div>
-
                     <!-- price slider -->
                     <div class="filter-block_priceRange_selector">
                     </div>
-
-                    <button class="filter-button" type="submit">Показать</button>
-                    
+                    <button class="filter-button" type="submit">Показать</button>                   
                 </div> <!--<div class="filter-block filter-show">  -->
             </form>
-
             <section class="results">
                 <div class="results-header">
                     <p class="results-found">
                         Найдено: 3
                     </p>
-
                     <div class="results-sortMode">
                         <p class="results-sortMode-item results-sortMode_header">
                             Сортировка
                         </p>
-
                         <a class="results-sortMode-item  results-sortMode-item_selected" href="#sortByPrice">
                             По цене
                         </a>
-
                         <a class="results-sortMode-item results-sortMode-item_variants" href="#sortByType">
                                 По типу
                         </a>
-
                         <a class="results-sortMode-item results-sortMode-item_variants" href="#sortByRating">
                                 По рейтингу
                         </a>                            
                     </div>
-
-                    <div class="results-order">
-                        
+                    <div class="results-order">                       
                         <a class="results-order-up" href="#orderUp">
 
                             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                                 <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/>
                             </svg>                                
-
                         </a>
-
                         <a class="results-order-down" href="#orderDown">
                             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
                                 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                                 <polygon fill="#81b3d2" points="5.5,10 0,0 11,0 "/>
                             </svg>
                         </a>
-
                     </div>
-
                 </div> <!-- <div class="results-header"> -->
-
                 <div class="result">
-                    <img class="result_image" src="./img/result_1.jpg" width="135" height="90" alt="Amara Resort image">
-                    
+                    <img class="result_image" src="./img/result_1.jpg" width="135" height="90" alt="Amara Resort image">                   
                     <div class="result_desc"> 
                         <div class="result_desc_header">
                                 <a class="result_desc_link" href="#linkToHotelDescr"> 
                                     Amara Resort & Spa
                                 </a>
                         </div>
-
                         <div class="result_desc_typeAndPrice">
                             <div class="result_desc_type">
                                     Гостиница
@@ -195,7 +161,6 @@
                                     От 4000 Р.
                             </div>                                
                         </div>
-
                         <div class="result-buttons">
                             <button type="button" class="button button_more">
                                 <span>
@@ -210,7 +175,6 @@
                             </button>                                                                 
                         </div>
                     </div>
-
                     <div class="result-rating">
                         <div class="result-rating_stars">
                             <img class="star" src="./img/star.png" width="18" height="17" alt="Rating star image">
@@ -224,35 +188,28 @@
                         </p>
                     </div>
                 </div>  <!-- <div class= "result"> -->
-
                 <div class="result">
-
-                    <img class="result_image" src="./img/result_2.jpg" width="135" height="90" alt="Desert Quail Inn image">
-                    
+                    <img class="result_image" src="./img/result_2.jpg" width="135" height="90" alt="Desert Quail Inn image">                    
                     <div class="result_desc"> 
                         <div class="result_desc_header">
                             <a class="result_desc_link" href="#linkToHotelDescr"> 
                                 Desert Quail Inn
                             </a>
                         </div>
-
                         <div class="result_desc_typeAndPrice">
                             <div class="result_desc_type">
                                     Мотель
                             </div>
-
                             <div class="result_desc_price">
                                     От 3000 Р.
                             </div>                                
                         </div>
-
                         <div class="result-buttons">
                             <button type="button" class="button button_more">
                                 <span>
                                     Подробнее
                                 </span>
                             </button>
-
                             <button type="button" class="button button_bookIt">
                                 <span>
                                     Забронировать
@@ -260,30 +217,25 @@
                             </button>                                                                 
                         </div>
                     </div>
-
                     <div class="result-rating">
                         <div class="result-rating_stars">
                             <img class="star" src="./img/star.png" width="18" height="17" alt="Rating star image">
                             <img class="star" src="./img/star.png" width="18" height="17" alt="Rating star image">
                             <img class="star" src="./img/star.png" width="18" height="17" alt="Rating star image">
                         </div>
-
                         <P class="result-rating_text">
                                 Рейтинг: 8,9
                         </p>
                     </div>
-                </div>  <!-- <div class="result"> -->   
-                    
+                </div>  <!-- <div class="result"> -->                       
                 <div class="result">
-                    <img class="result_image" src="./img/result_3.jpg" width="135" height="90" alt="Villas at Poco Diablo image">
-                    
+                    <img class="result_image" src="./img/result_3.jpg" width="135" height="90" alt="Villas at Poco Diablo image">                   
                     <div class="result_desc"> 
                         <div class="result_desc_header">
                             <a class="result_desc_link" href="#linkToHotelDescr">                                 
                                 Villas at Poco Diablo
                             </a>
                         </div>
-
                         <div class="result_desc_typeAndPrice">
                             <div class="result_desc_type">
                                     Апартаменты
@@ -292,7 +244,6 @@
                                     От 2000 Р.
                             </div>                                
                         </div>
-
                         <div class="result-buttons">
                             <button type="button" class="button button_more">
                                 <span>
@@ -306,7 +257,6 @@
                             </button>                                                                    
                         </div>
                     </div>
-
                     <div class="result-rating">
                         <div class="result-rating_stars">
                             <img class="star" src="./img/star.png" width="18" height="17" alt="Rating star image">
@@ -317,14 +267,12 @@
                         </p>
                     </div>
                 </div>  <!-- <div class="result"> -->                           
-
             </section> <!-- <section class="results"> -->
         </main>
             <footer class="footer-hotels">
                     <p class="footer-hashtag">
                             #VISITSEDONA
                     </p>
-            
                     <ul class="footer-social-links">
                         <li class="footer-social-links-item">
                             <a href="#twi">
@@ -338,8 +286,7 @@
                                             C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
                                             c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z"/>
                                     </g>
-                                </svg>
-                            
+                                </svg>                           
                             </a>
                         </li>
                         <li class="footer-social-links-item">
@@ -360,13 +307,11 @@
                                     </svg>
                                 </a>
                         </li>                
-                    </ul>
-            
+                    </ul>           
                     <p class="footer-designedBy">
                         <span class="footer-designedBy-desc">
                             WebSite by
-                        </span>
-        
+                        </span>        
                         <a href="http://htmlacademy.ru">
                             <svg  version="1.1"  xmlns="http://www.w3.org/2000/svg"  width="115px" height="41px" fill="#000">
                                 <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)" />
@@ -385,8 +330,7 @@
                         </a>
                     </p>                 
             </footer>
-    </div> <!-- <div class="positioner"> -->    
-    
+    </div> <!-- <div class="positioner"> -->     
     <script src="./js/nouislider.js"></script>
     <script src="./js/script.js"></script>
 </body>
